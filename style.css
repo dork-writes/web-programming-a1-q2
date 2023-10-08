@@ -1,0 +1,480 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #f5f7fa;
+}
+
+span
+{
+    font-weight: 200;
+}
+
+.main-header
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.25rem;
+}
+
+.option
+{
+    padding: 0.6rem 0;
+    padding-top: 0.75rem;
+    border-bottom: 2px solid transparent;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.option:hover
+{
+    border-bottom: 2px solid #101010;
+}
+
+.option.first
+{
+    margin-left: 2.75rem;
+}
+
+.options-header
+{
+    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 3.5rem;
+    background-color: white;
+    font-size: small;
+    color: hsl(0, 0%, 50%);
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px #d3d3d3;
+}
+
+.landing-image
+{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.options-header.mobile
+{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.75rem 1rem;
+}
+
+.trademark
+{
+    display: flex;
+    align-items: center;
+    font-size: 24.5px;
+    font-family: Nunito;
+}
+
+.ham
+{
+    border: none;
+    background-color: transparent;
+}
+
+.logo
+{
+    padding-right: 4.5px;
+}
+
+nav
+{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+}
+
+button
+{
+    height: fit-content;
+}
+
+p
+{
+    margin: 0;
+}
+
+.semibold
+{
+    font-weight: 700;
+}
+
+.search
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 0.1px solid #43aece;
+    color: #43aece;
+}
+
+.down
+{
+    margin-left: 0.25rem;
+}
+
+.border-right
+{
+    padding: 1.25rem 0.1rem;
+    border-right: 1px solid rgba(128,128,128,0.25);
+}
+
+.nav-link
+{
+    color: rgb(88, 85, 85);
+    font-weight: 600;
+}
+
+.nav-question
+{  
+    color: #F48360;
+}
+
+.nuktay
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+main 
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.dot
+{
+    padding: 0.25rem;
+    background-color: #a6a1a199;
+    border-radius: 100%;
+    margin: 0 0.375rem;
+}
+
+.dot.active
+{
+    background-color: #b92429;
+}
+
+.floating-profile
+{
+    position: absolute;
+    background-color: white;
+    padding: 0.75rem 0.25rem;
+    border-radius: 10px;
+    width: 8rem;
+    right: -0.9rem;
+    box-shadow: 1px 2px 1px #d3d3d399;
+    top: 13.9rem;
+}
+
+.star
+{
+    transform: translateY(1px);
+}
+
+.title, .creator, .rating
+{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.title
+{
+    font-weight: 600;
+}
+
+.creator, .rating
+{
+    color: grey;
+    display: block;
+}
+
+.rating-num
+{
+    font-weight: 700;
+}
+
+.profile-pic
+{
+    border-radius: 100%;
+    width: 37.5%;
+    margin: 0 auto;
+    display: block;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2em;
+    width: 90%;
+    margin: 0 auto;
+    color: #b92429;
+    font-family: Nunito;
+    letter-spacing: -0.0625rem;
+    font-weight: 900;
+    line-height: 2.25rem;
+}
+
+.tagline
+{
+    width: 87%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1.25rem auto;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #101010cc;
+    line-height: 1.75rem;
+}
+
+.searchbar
+{
+    padding: 1.5rem 0rem;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 90%;   
+}
+
+.searchbar:hover input, .searchbar:hover .search-input-button
+{
+    box-shadow: 1px 4px 4px #d3d3d399;
+    transition: all 100ms linear;
+}
+
+input
+{
+    box-shadow: 0.5px 2px 2px #d3d3d399;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    transform: translateX(2px);
+    margin: 0;
+    width: 80%;
+}
+
+.search-input-button
+{
+    transform: translate(-2px, 0.56rem);
+    margin: 0;
+    box-shadow: 0.5px 2px 2px #d3d3d399;
+    padding: 0.43rem 0rem;
+    background-color: #b92429;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 18%;
+    cursor: pointer;
+}
+
+.search-input-button:hover
+{
+    background-color: #a92429;
+    transition: all 100ms linear;
+}
+
+.tags
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 88%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: gray;
+    margin-top: 0.5rem;
+}
+
+.tag-label
+{
+    padding-right: 10px;
+}
+
+.tag
+{
+    font-size: 12px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transform: translateY(-0.5rem);
+    background-color: #e9ebf0;
+}
+
+@media only screen and (min-width: 1280px)
+{
+    .image
+    {
+        transform: translateX(-5rem);
+    }
+
+    .main-header
+    {
+        padding: 1rem 2.5rem;
+        padding-top: 1.25rem;
+        transform: translateY(-0.28rem);
+    }
+
+    h1
+    {
+        width: 100%;
+        line-height: 5.5rem;
+        font-size: 1em;
+        padding-bottom: 0.5rem;
+    }
+
+    .nuktay
+    {
+        margin: 1.6rem 0;
+    }
+
+    .options-header.mobile
+    {
+        display: none;
+    }
+
+    .options-header
+    {
+        display: flex;
+        transform: translateY(-0.55rem);
+    }
+
+    .ham
+    {
+        display: none;
+    }
+
+    nav
+    {
+        display: flex;
+        width: 48vw;
+    }
+
+    .profile-pic
+    {
+        border-radius: 100%;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .landing-image
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        margin: 1rem auto;
+        flex-direction: row;
+        transform: translateY(-0.2rem);
+        justify-content: center;
+    }
+
+    .floating-profile
+    {
+        position: absolute;
+        background-color: white;
+        padding: 1.25rem 0.75rem;
+        border-radius: 10px;
+        width: 12rem;
+        top: 24.9rem;
+        right: 1.7rem;
+    }
+
+    .section
+    {
+        width: 50%;
+    }
+
+    h1, .tagline
+    {
+        text-align: left;
+        width: 75%;
+    }
+
+    h1
+    {
+        font-size: 5rem;
+        width: 75%;
+    }
+
+    .tagline
+    {
+        font-size: 1.37rem;
+        margin-top: 1.5rem;
+    }
+
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 75vh;
+    }
+
+    .searchbar
+    {
+        width: 88%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    input
+    {
+        transform: translateX(4px);
+        font-size: medium;
+        width: 75%;
+        padding: 1.5rem 1rem;
+    }
+
+    .search-input-button
+    {
+        transform: translate(-4px, 0.46rem);
+        width: 11%;
+        height: 100%;
+        font-size: larger;
+    }
+
+    .tags
+    {
+        margin-top: 1rem;
+        width: 75%;
+        width: 55%;
+        font-size: small;
+        margin-left: 6rem;
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1300px)
+{
+    nav
+    {
+        width: 38vw;
+    }
+}
